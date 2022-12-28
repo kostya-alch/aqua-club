@@ -1,3 +1,4 @@
+/*Default*/
 *,
 *::after,
 *::before {
@@ -33,3 +34,129 @@ h6 {
   padding: 0 15px;
   margin: 0 auto;
 }
+/*Default*/
+
+/*Header*/
+
+.header {
+  background-image: url(../assets/images/header/header-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: center;
+  position: relative;
+}
+
+header::before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 456px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translateY(35%);
+  background-image: url(../assets/images/header/header-decor.svg);
+}
+
+header::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 456px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translateY(75%) rotate(180deg);
+  background-image: url(../assets/images/header/header-decor.svg);
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  padding: 57px 0;
+  gap: 100px;
+  justify-content: flex-end;
+}
+
+.header__logo path {
+  transition: fill 0.3s ease;
+}
+
+.header__logo:hover path {
+  fill: #0093a1;
+}
+
+.header__btn {
+  font-family: 'Comfortaa', cursive;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  background-color: #262c27;
+  padding: 12px 77px 8px 71px;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.header__btn:hover {
+  background-color: #b9c400;
+}
+
+.header__phone {
+  font-family: 'Comfortaa', cursive;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.header-content {
+  min-height: calc(100vh - 161px);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header-content__box {
+  max-width: 550px;
+  text-align: center;
+  margin-right: 30px;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: 'Comfortaa', cursive;
+}
+
+.header-content__title {
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 64px;
+  line-height: 71px;
+  margin-bottom: 20px;
+}
+
+.header-content__text {
+  margin-bottom: 20px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.header__decor-text {
+  position: absolute;
+  top: 0;
+}
+
+.decor1 {
+}
+
+/*Header*/
