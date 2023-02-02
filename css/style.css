@@ -45,6 +45,7 @@ h6 {
   min-height: 100vh;
   background-position: center;
   position: relative;
+  margin-bottom: 80px;
 }
 
 header::before {
@@ -192,3 +193,63 @@ header::after {
   z-index: 4;
 }
 /*Header*/
+
+/*Info*/
+
+.info {
+  background-image: url('../assets/images/info/sup-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.info::before {
+  content: '';
+  background-color: #262c27;
+  position: absolute;
+  height: 130px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transform: translateY(-120px);
+}
+
+.info__top {
+  display: flex;
+  gap: 80px;
+  padding-top: 100px;
+}
+
+.info__top-text {
+  padding-top: 245px;
+  width: 290px;
+  color: #fff;
+  position: relative;
+}
+
+.info__top-img {
+  position: relative;
+  z-index: 6;
+}
+
+.popup-btn-play {
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+}
+
+.popup-btn-play span {
+  color: #fff;
+  display: block;
+  padding-top: 12px;
+}
+
+.info__btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/*Info*/
