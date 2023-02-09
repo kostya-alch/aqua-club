@@ -508,4 +508,35 @@ header::after {
   border-radius: 0 0 0 300px;
 }
 
+.gallery-max {
+  display: grid;
+  grid-template-columns: 300px 469px 391px;
+  grid-template-rows: 340px 270px 270px;
+  gap: 20px;
+}
+
+.gallery-max__img--2 {
+  grid-column: 2 /-1;
+  justify-self: end;
+}
+
+.gallery-max__img--6 {
+  grid-column: 2 /-1;
+}
+
+.gallery-max__text {
+  background-color: #0093a1;
+  border: 1px solid #0093a1;
+  border-radius: 0 0 0 200px;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*Technology*/
