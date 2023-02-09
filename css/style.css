@@ -388,6 +388,12 @@ header::after {
   align-items: center;
   right: 0;
   bottom: 130px;
+  transition: all 0.3s;
+}
+
+.buy__price:hover {
+  transform: scale(1.3);
+  cursor: pointer;
 }
 
 .buy__btn {
@@ -540,3 +546,107 @@ header::after {
 }
 
 /*Technology*/
+
+/*Footer*/
+
+.footer {
+  padding: 100px 0 80px;
+  background-color: #262c27;
+  color: #fff;
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__title {
+  font-family: 'Comfortaa', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 67px;
+  margin-bottom: 27px;
+}
+
+.footer__form {
+  max-width: 500px;
+}
+
+.footer__logo path {
+  transition: all 0.3s ease-in;
+}
+
+.footer__logo {
+  align-self: flex-start;
+}
+
+.footer__logo:hover path {
+  fill: #0093a1;
+}
+
+.footer__form-input {
+  background-color: transparent;
+  border: none;
+  display: block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  width: 100%;
+  padding: 10px 0;
+  color: #fff;
+  margin-bottom: 57px;
+}
+
+.footer__form-input::placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  opacity: 0.2;
+}
+
+.footer__form-btn {
+  background-color: #fff;
+  padding: 10px 66px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 110px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  color: #000000;
+  font-family: 'Comfortaa', cursive;
+}
+
+.footer__gallery-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  margin-bottom: 28px;
+}
+
+.footer__gallery {
+  display: flex;
+  gap: 52px;
+  cursor: pointer;
+  margin-bottom: 51px;
+}
+
+.footer__menu-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 90px;
+}
+
+.footer__menu-link {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.footer__menu-link:hover {
+  text-decoration: underline;
+}
+
+/*Footer*/
